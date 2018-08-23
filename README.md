@@ -47,6 +47,7 @@ intersections are possible for a given ray (always one? sometimes two? ever
 zero?) and in the presence of multiple answers choose the closest one.
 
 > **Question:** Why keep the closest hit?
+>
 > **Hint:** 🤦🏻
 
 In this assignment, we'll use simple representations for primitives. For
