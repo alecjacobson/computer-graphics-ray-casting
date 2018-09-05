@@ -7,7 +7,7 @@
 
 ## Background
 
-### Read Sections 4.1-4.4 of _Fundamentals of Comptuer Graphics (4th Edition)_.
+### Read Sections 4.1-4.4 of _Fundamentals of Computer Graphics (4th Edition)_.
 
 _We will cover basic shading, shadows and reflection in the next assignment._
 
