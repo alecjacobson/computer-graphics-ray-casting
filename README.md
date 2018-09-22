@@ -1,8 +1,8 @@
 # Computer Graphics – Ray Casting
 
-> **To get started:** Fork this repository then issue
+> **To get started:** Clone this repository by issuing:
 > 
->     git clone --recursive http://github.com/[username]/computer-graphics-ray-casting.git
+>     git clone --recursive http://github.com/alecjacobson/computer-graphics-ray-casting.git
 >
 
 ## Background
