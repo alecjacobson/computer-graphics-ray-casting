@@ -91,10 +91,10 @@ inline bool read_json(
       }else if(jobj["type"] == "triangle")
       {
         std::shared_ptr<Triangle> tri(new Triangle());
-        tri->corners = {
+        tri->corners = std::make_tuple(
           parse_Vector3d(jobj["corners"][0]),
           parse_Vector3d(jobj["corners"][1]),
-          parse_Vector3d(jobj["corners"][2])};
+          parse_Vector3d(jobj["corners"][2]));
         objects.push_back(tri);
       }else if(jobj["type"] == "soup")
       {
@@ -118,11 +118,11 @@ inline bool read_json(
         for(int f = 0;f<F.size();f++)
         {
           std::shared_ptr<Triangle> tri(new Triangle());
-          tri->corners = {
+          tri->corners = std::make_tuple(
             Eigen::Vector3d( V[F[f][0]][0], V[F[f][0]][1], V[F[f][0]][2]),
             Eigen::Vector3d( V[F[f][1]][0], V[F[f][1]][1], V[F[f][1]][2]),
             Eigen::Vector3d( V[F[f][2]][0], V[F[f][2]][1], V[F[f][2]][2])
-          };
+          );
           soup->triangles.push_back(tri);
         }
         objects.push_back(soup);
