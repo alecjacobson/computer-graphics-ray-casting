@@ -208,7 +208,7 @@ Intersect a triangle soup with a ray.
 > optimization](https://en.wikipedia.org/wiki/Optimizing_compiler): 
 >
 > ```
-> make build-release
+> mkdir build-release
 > cd build-release
 > cmake ../ -DCMAKE_BUILD_TYPE=Release
 > make
