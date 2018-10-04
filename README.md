@@ -196,7 +196,20 @@ Intersect a triangle soup with a ray.
 ![Running `./raycasting ../shared/data/bunny.json` should produce images that like this. _**Note:** This example may take a few seconds to compute._](images/bunny.gif)
 
 > **Pro Tip:** Mac OS X users can quickly preview the output images using
+>
 > ```
 > ./raycasting && qlmanage -p {id,depth,normal}.ppm
 > ```
+>
 > Flicking the left and right arrows will toggle through the results
+
+> **Pro Tip:** After you're confident that your program is working _correctly_,
+> you can dramatic improve the performance simply by enabling [compiler
+> optimization](https://en.wikipedia.org/wiki/Optimizing_compiler): 
+>
+> ```
+> make build-release
+> cd build-release
+> cmake ../ -DCMAKE_BUILD_TYPE=Release
+> make
+> ```

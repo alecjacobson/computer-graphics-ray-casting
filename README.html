@@ -51,6 +51,7 @@ MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
 <span class="math">\(\newcommand{\r}{\vec{r}}\)</span>
 <span class="math">\(\newcommand{\transpose}{{\mathsf T}}\)</span>
 <span class="math">\(\newcommand{\tr}[1]{\mathop{\text{tr}}{\left(#1\right)}}\)</span>
+<span class="math">\(\newcommand{\s}{\vec{s}}\)</span>
 <span class="math">\(\newcommand{\t}{\vec{t}}\)</span>
 <span class="math">\(\newcommand{\u}{\vec{u}}\)</span>
 <span class="math">\(\newcommand{\vec}[1]{\mathbf{#1}}\)</span>
@@ -63,15 +64,15 @@ MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
 <h1 id="computergraphics–raycasting">Computer Graphics – Ray Casting</h1>
 
 <blockquote>
-<p><strong>To get started:</strong> Fork this repository then issue</p>
+<p><strong>To get started:</strong> Clone this repository by issuing:</p>
 
-<pre><code>git clone --recursive http://github.com/[username]/computer-graphics-ray-casting.git
+<pre><code>git clone --recursive http://github.com/alecjacobson/computer-graphics-ray-casting.git
 </code></pre>
 </blockquote>
 
 <h2 id="background">Background</h2>
 
-<h3 id="readsections4.1-4.4offundamentalsofcomptuergraphics4thedition.">Read Sections 4.1&#8211;4.4 of <em>Fundamentals of Computer Graphics (4th Edition)</em>.</h3>
+<h3 id="readsections4.1-4.4offundamentalsofcomputergraphics4thedition.">Read Sections 4.1&#8211;4.4 of <em>Fundamentals of Computer Graphics (4th Edition)</em>.</h3>
 
 <p><em>We will cover basic shading, shadows and reflection in the next assignment.</em></p>
 
@@ -307,11 +308,22 @@ In addition, <code>#include &lt;Eigen/Geometry&gt;</code> has useful geometric f
 </figure>
 
 <blockquote>
-<p><strong>Pro Tip:</strong> Mac OS X users can quickly preview the output images using
-<code>
-./raycasting &amp;&amp; qlmanage -p {id,depth,normal}.ppm
-</code>
-Flicking the left and right arrows will toggle through the results</p>
+<p><strong>Pro Tip:</strong> Mac OS X users can quickly preview the output images using</p>
+
+<pre><code>./raycasting &amp;&amp; qlmanage -p {id,depth,normal}.ppm
+</code></pre>
+
+<p>Flicking the left and right arrows will toggle through the results</p>
+
+<p><strong>Pro Tip:</strong> After you&#8217;re confident that your program is working <em>correctly</em>,
+you can dramatic improve the performance simply by enabling <a href="https://en.wikipedia.org/wiki/Optimizing_compiler">compiler
+optimization</a>: </p>
+
+<pre><code>make build-release
+cd build-release
+cmake ../ -DCMAKE_BUILD_TYPE=Release
+make
+</code></pre>
 </blockquote>
 
 </body>
