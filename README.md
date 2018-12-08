@@ -188,12 +188,12 @@ Intersect a plane with a ray.
 ### `Triangle::intersect_ray` in `src/Triangle.cpp`
 Intersect a triangle with a ray.
 
-![Running `./raycasting ../shared/data/triangle.json` should produce `id.ppm` that looks like this.](images/triangle-id.png)
+![Running `./raycasting ../data/triangle.json` should produce `id.ppm` that looks like this.](images/triangle-id.png)
 
 ### `TriangleSoup::intersect_ray` in `src/TriangleSoup.cpp`
 Intersect a triangle soup with a ray.
 
-![Running `./raycasting ../shared/data/bunny.json` should produce images that like this. _**Note:** This example may take a few seconds to compute._](images/bunny.gif)
+![Running `./raycasting ../data/bunny.json` should produce images that like this. _**Note:** This example may take a few seconds to compute._](images/bunny.gif)
 
 > **Pro Tip:** Mac OS X users can quickly preview the output images using
 >
