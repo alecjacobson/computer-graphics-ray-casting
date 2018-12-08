@@ -2,7 +2,7 @@
 
 > **To get started:** Clone this repository by issuing:
 > 
->     git clone --recursive http://github.com/alecjacobson/computer-graphics-ray-casting.git
+>     git clone http://github.com/alecjacobson/computer-graphics-ray-casting.git
 >
 
 ## Background
