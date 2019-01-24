@@ -11,8 +11,7 @@ bool write_ppm(
   const int num_channels)
 {
   ////////////////////////////////////////////////////////////////////////////
-  // Replace with your code from computer-graphics-raster-images or email
-  // jacobson@cs.toronto.edu for correct code.
+  // Replace with your code from computer-graphics-raster-images
   return false;
   ////////////////////////////////////////////////////////////////////////////
 }
