@@ -194,7 +194,7 @@ Intersect a triangle with a ray.
 ### `TriangleSoup::intersect_ray` in `src/TriangleSoup.cpp`
 Intersect a triangle soup with a ray.
 
-![Running `./raycasting ../data/bunny.json` should produce images that like this. _**Note:** This example may take a few seconds to compute._](images/bunny.gif)
+![Running `./raycasting ../data/bunny.json` should produce images that like this. _**Note:** This example may take a while to compute; try using a release build if you're confident your code works._](images/bunny.gif)
 
 > **Pro Tip:** Mac OS X users can quickly preview the output images using
 >
