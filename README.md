@@ -75,6 +75,10 @@ $-\mathbf{w}$. Keep in mind that the `width` and `height` are measure in the
 units of the _scene_, not in the number of pixels. For example, we can fit a
 1024x1024 image into a camera with width $=1$ and height $=1$.
 
+**Note:** The textbook puts the pixel coordinate origin in the bottom-left, and
+uses $i$ as a column index and $j$ as a row index. In this assignment; the
+origin is in the _top-left_, $i$ is a _row_ index, and $j$ is a _column_ index.
+
 > **Question:** Given that $\mathbf{u}$ points right and $\mathbf{v}$ points up,
 > why does _minus_ $\mathbf{w}$ point into the scene?
 >
