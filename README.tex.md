@@ -1,6 +1,6 @@
 # Computer Graphics – Ray Casting
 
-> **To get started:** Clone this repository and its submodule using
+> **To get started:** Clone this repository and its submodule using 
 > 
 >     git clone --recursive http://github.com/alecjacobson/computer-graphics-ray-casting.git
 >
