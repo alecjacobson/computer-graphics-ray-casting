@@ -21,9 +21,9 @@ get a first glimpse that more complex shapes can be created as a collection of
 these primitives.
 
 The core interaction that we need to start visualizing these shapes is
-ray-object intersection. A ray emanating from a point $\mathbf{e} ∈ \mathbb{R}³$
-(e.g., a camera's "eye") in a direction $\mathbf{d} ∈ \mathbb{R}³$ can be
-_parameterized_ by a single number $t ∈ [0,∞)$. Changing the value of $t$ picks
+ray-object intersection. A ray emanating from a point $\mathbf{e} \in  \mathbb{R}^3 $
+(e.g., a camera's "eye") in a direction $\mathbf{d} \in  \mathbb{R}^3 $ can be
+_parameterized_ by a single number $t \in  [0,\infty )$. Changing the value of $t$ picks
 a different point along the ray. Remember, a ray is a 1D object so we only need
 this one "knob" or parameter to move along it. The [parametric
 function](https://en.wikipedia.org/wiki/Parametric_equation) for a ray written
@@ -38,7 +38,7 @@ For each object in our scene we need to find out:
   1. is there some value $t$ such that the ray $\mathbf{r}(t)$ lies on the
   surface of the object?
   2. if so, what is that value of $t$ (and thus what is the position of
-     intersection $\mathbf{r}(t)∈\mathbb{R}³$
+     intersection $\mathbf{r}(t)\in \mathbb{R}^3 $
   3. and what is the surface's [unit](https://en.wikipedia.org/wiki/Unit_vector)
      [normal vector](https://en.wikipedia.org/wiki/Normal_(geometry)) at the
      point of intersection.
@@ -63,7 +63,7 @@ the plane.
 ### Camera
 
 In this assignment we will pretend that our "camera" or "eye" looking into the
-scene is shrunk to a single 3D point $\mathbf{e} ∈ \mathbb{R}³$ in space. The
+scene is shrunk to a single 3D point $\mathbf{e} \in  \mathbb{R}^3 $ in space. The
 image rectangle (e.g., 640 pixels by 360 pixels) is placed so the image center
 is directly _in front_ of the
 "eye" point at a certain ["focal
@@ -124,7 +124,7 @@ through each pixel. Each object is assigned to its own unique color.](images/sph
 The object ID image gives us very little sense of 3D. The simplest image to
 encode the 3D geometry of a scene is a [depth
 image](https://en.wikipedia.org/wiki/Depth_map). Since the range of depth is
-generally $[d,∞)$ where $d$ is the distance from the camera's eye to the camera
+generally $[d,\infty )$ where $d$ is the distance from the camera's eye to the camera
 plane, we must map this to the range $[0,1]$ to create a [grayscale
 image](https://en.wikipedia.org/wiki/Grayscale). In this assignment we use a
 simple non-linear mapping based on reasonable default values.
@@ -138,11 +138,11 @@ distances.](images/sphere-packing-depth.png)
 The depth image technically captures all geometric information visible by
 casting rays from the camera, but interesting surfaces will appear dull because
 small details will have nearly the same depth.  During ray-object intersection
-we compute or return the surface normal vector $\mathbf{n} ∈ \mathbf{R}³$ at the
+we compute or return the surface normal vector $\mathbf{n} \in  \mathbf{R}^3 $ at the
 point of intersection. Since the normal vector is [unit
 length](https://en.wikipedia.org/wiki/Unit_vector), each coordinate value is
 between $[-1,1]$. We can map the normal vector to an rgb value in a linear way
-(e.g., $r = ½ x + ½$).
+(e.g., $r = \frac12  x + \frac12 $).
 
 Although all of these images appear cartoonish and garish, together they reveal
 that ray-casting can probe important pixel-wise information in the 3D scene.
