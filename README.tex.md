@@ -38,7 +38,7 @@ For each object in our scene we need to find out:
   1. is there some value $t$ such that the ray $\mathbf{r}(t)$ lies on the
   surface of the object?
   2. if so, what is that value of $t$ (and thus what is the position of
-     intersection $\mathbf{r}(t)\in \mathbb{R}^3 $
+     intersection $\mathbf{r}(t) \in \mathbb{R}^3 $ )
   3. and what is the surface's [unit](https://en.wikipedia.org/wiki/Unit_vector)
      [normal vector](https://en.wikipedia.org/wiki/Normal_(geometry)) at the
      point of intersection.
